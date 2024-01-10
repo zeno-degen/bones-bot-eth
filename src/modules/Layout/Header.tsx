@@ -16,9 +16,11 @@ export const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const router = useRouter();
   return (
-    <div className="flex items-center justify-between w-full">
+    <div className="flex items-center justify-between w-full bg-black px-[30px] py-[20px]">
       <div className="flex items-center justify-center">
-        <MegaMenuIcon />
+        <div className="cursor-pointer">
+          <MegaMenuIcon />
+        </div>
         <SearchBox />
       </div>
       <div className="flex items-center justify-center gap-[15px]">
